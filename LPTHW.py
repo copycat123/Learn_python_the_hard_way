@@ -9,11 +9,11 @@ print 'I "said" do not touch this.'
 '''
 
 
-# Commets and compound characters
+# -----------Commets and compound characters--------------
 
 # print("I could have code like this.")  # and the comment after is ignored
 
-#Numbers and math
+# ------------Numbers and math--------------
 
 # print("I will now count my chickens:")
 
@@ -30,7 +30,7 @@ print 'I "said" do not touch this.'
 
 # print("What is 3 + 2?", 3 + 2)
 
-#Variables and Names
+# -------------------Variables and Names-----------------
 
 # cars = 100
 # space_in_a_car = 4.0
@@ -48,7 +48,7 @@ print 'I "said" do not touch this.'
 # print("We have", passengers, "to carpool today.")
 # print("We need to put about", average_passangers_per_car, "in each car today.")
 
-# Variables and Prints
+# -------------Variables and Prints--------------
 
 # my_name = "Zed shaw"
 # my_age = 35
@@ -68,7 +68,7 @@ print 'I "said" do not touch this.'
 # print("If I add %d, %d, and %d I get %d" % (
 #     my_age, my_height, my_weight, my_age + my_height + my_weight))
 
-# Strings formatings
+# ------------Strings formatings--------------
 
 # x = "There are %d types of people." % 10
 # binary = "binary"
@@ -92,7 +92,7 @@ print 'I "said" do not touch this.'
 
 # print(w + e)
 
-# MORE PRINTING
+# ----------------MORE PRINTING----------
 
 # print("Mary had a little lamb.")  # print statement
 # print("Its fleece was white as %s" % 'snow')  # place 'snow' in %s
@@ -116,7 +116,7 @@ print 'I "said" do not touch this.'
 # print(end7 + end8 + end9 + end10 + end11 + end12)
 
 
-# MORE FORMATTER
+# -----------------MORE FORMATTER------------
 
 # FORMATTER = "%r %r %r %r "
 
@@ -151,7 +151,8 @@ print 'I "said" do not touch this.'
 # print(fat_cat)
 
 
-# ASK QUESTIONS
+# -------------------ASK QUESTIONS--------------
+
 # print("How old are u")
 # age = input()
 # print("How tall are u")
@@ -163,7 +164,7 @@ print 'I "said" do not touch this.'
 #     age, my_height, my_weight))
 
 
-# PARAMETERS UNPACKING AND VARIABLES
+# -------------PARAMETERS UNPACKING AND VARIABLES-------------
 
 # from sys import argv
 
@@ -174,7 +175,7 @@ print 'I "said" do not touch this.'
 # print('the second is called', second)
 # print('the third is called', third)
 
-# PROMPTING AND PASSING
+# ------------PROMPTING AND PASSING-----------
 
 # from sys import argv
 
@@ -196,7 +197,7 @@ print 'I "said" do not touch this.'
 #         You live in {}. Not sure where that is.
 #         And you have a {} computer. Nice.'''.format(likes, lives, computer))
 
-# READING FILES
+# --------------READING FILES-----------------
 
 # from sys import argv
 
@@ -212,7 +213,7 @@ print 'I "said" do not touch this.'
 # text_again = open(file_again)
 # print(text_again.read())
 
-# READ FILES PART 2
+# -------------READ FILES PART 2-----------------
 
 # import argv module
 # from sys import argv

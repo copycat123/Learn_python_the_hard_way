@@ -254,3 +254,37 @@ print 'I "said" do not touch this.'
 
 # print("And finally, we close it.")  # And finally it will close the file...
 # target.close()
+
+
+# MORE WORKING WITH FILES
+
+# imported a new module called exists which return a bool statement
+from sys import argv
+from os.path import exists
+
+script, test, dummy = argv
+
+print("Copying from %s to %s" % (test, dummy))
+
+# This line open the mentioned file and read the data within a file
+in_file = open("test.py")
+indata = in_file.read()
+
+# This section tells us about the bytes data within
+# a file and use the exist method to
+# to find out if the dummy file exist or not
+print("Does the output file exist? %r" % exists(dummy))
+print("The input file is %d bytes long" %
+      len(indata))
+print("Ready, hit ENTER to continue, CTRL-Z to abort")
+
+input()
+
+# This line opens the dummy file write the copied data into dummy file
+out_file = open("dummy.txt", 'w')
+out_file.write(indata)
+
+print("Alright, all done")
+
+out_file.close()
+in_file.close()  # finally close both dummy and test file

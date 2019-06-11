@@ -200,18 +200,16 @@ print 'I "said" do not touch this.'
 # --------------READING FILES-----------------
 
 # from sys import argv
-
 # script, dummy = argv
 
-# text = open("dummy.txt")
-# print("Here's your file %r" % dummy)
-# print(text.read())  # This line here is gonna open the readable data in a file
 
+# file = open("dummy.txt")    # open the dummy file as a reading
+# print("Here is your file: %r" % dummy)
+# print(file.read())
 
-# # This line is gonna ask you to input the file name
-# file_again = input("Type the file name again: > ")
-# text_again = open(file_again)
-# print(text_again.read())
+# open_file_again = input("Open the file again> ")
+# open_file_again = open(open_file_again)  # Open the dummy file again
+# print(open_file_again.read())  # Print this function
 
 # -------------READ FILES PART 2-----------------
 
@@ -243,12 +241,9 @@ print 'I "said" do not touch this.'
 # print("I'm going to write these to the file.")
 
 # target.write(lines1)
-# target.write("\n")
-
-# # To line 242 to 250 is going to write the new data in a file
+# target.write("\n")        # To line 242 to 250 is going to write the new data in a file
 # target.write(lines2)
 # target.write("\n")
-
 # target.write(lines3)
 # target.write("\n")
 
@@ -259,32 +254,31 @@ print 'I "said" do not touch this.'
 # MORE WORKING WITH FILES
 
 # imported a new module called exists which return a bool statement
-from sys import argv
-from os.path import exists
+# from sys import argv
+# from os.path import exists
 
-script, test, dummy = argv
+# script, test, dummy = argv
 
-print("Copying from %s to %s" % (test, dummy))
+# print("Copying from %s to %s" % (test, dummy))
 
-# This line open the mentioned file and read the data within a file
-in_file = open("test.py")
-indata = in_file.read()
+# # This line open the mentioned file and read the data within a file
+# in_file = open("test.py")
+# indata = in_file.read()
 
-# This section tells us about the bytes data within
-# a file and use the exist method to
-# to find out if the dummy file exist or not
-print("Does the output file exist? %r" % exists(dummy))
-print("The input file is %d bytes long" %
-      len(indata))
-print("Ready, hit ENTER to continue, CTRL-Z to abort")
+# # This section tells us about the file size and use the exist method to
+# # to find out if the dummy file exist or not with the help of bool
+# print("Does the output file exist? %r" % exists(dummy))
+# print("The input file is %d bytes long" %
+#       len(indata))
+# print("Ready, hit ENTER to continue, CTRL-Z to abort")
 
-input()
+# input()
 
-# This line opens the dummy file write the copied data into dummy file
-out_file = open("dummy.txt", 'w')
-out_file.write(indata)
+# # This line opens the dummy file write the copied data into dummy file
+# out_file = open("dummy.txt", 'w')
+# out_file.write(indata)
 
-print("Alright, all done")
+# print("Alright, all done")
 
-out_file.close()
-in_file.close()  # finally close both dummy and test file
+# out_file.close()
+# in_file.close()  # finally close both dummy and test file

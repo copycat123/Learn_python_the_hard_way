@@ -259,25 +259,50 @@ print 'I "said" do not touch this.'
 
 # script, test, dummy = argv
 
-# print("Copying from %s to %s" % (test, dummy))
+# print("Copying from %s to %s" %(test, dummy))
 
-# # This line open the mentioned file and read the data within a file
+# ------>This line open the mentioned file and read the data within a file
 # in_file = open("test.py")
 # indata = in_file.read()
 
-# # This section tells us about the file size and use the exist method to
-# # to find out if the dummy file exist or not with the help of bool
+# ---->This section tells us about the file size and use the exist method to
+# -----> to find out if the dummy file exist or not with the help of bool
 # print("Does the output file exist? %r" % exists(dummy))
 # print("The input file is %d bytes long" % len(indata))
 # print("Ready, hit ENTER to continue, CTRL-Z to abort")
 
 # input()
 
-# # This line opens the dummy file write the copied data into dummy file
+# ------>This line opens the dummy file write the copied data into dummy file
 # out_file = open("dummy.txt", 'w')
 # out_file.write(indata)
 
 # print("Alright, all done")
 
 # out_file.close()
-# in_file.close()  # finally close both dummy and test file
+# in_file.close()  -----> finally close both dummy and test file
+
+
+# ----------MIX CODE WITH NAMES, VARIABLES, CODE AND FUNCTIONS-----------
+
+# def print_two(*args):
+#     arg1, arg2 = args
+#     print("arg1: %r, arg2: %r" % (arg1, arg2))  ------->Line 288 to 294 are same function with different method
+
+
+# def print_two_again(arg1, arg2):
+#     print("arg1: %r, arg2: %r" % (arg1, arg2))
+
+
+# def print_one(arg1):
+#     print("arg1: %r" % arg1)   ----->This section print single argument
+
+
+# def print_none():
+#     print("I got nothing")   ------->This section print the string
+
+
+# print_two("pushpinder", "singh")
+# print_two_again("pushpinder", "singh")
+# print_one("First!")
+# print_none()

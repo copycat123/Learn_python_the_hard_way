@@ -326,3 +326,43 @@ print 'I "said" do not touch this.'
 
 # print("And we can combine the two, variables and math:")
 # cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+
+# FUNCTIONS AND  FILES
+
+from sys import argv
+
+script, dummy = argv
+
+
+def print_all(f):
+    print(f.read())  # ------> opens the file to as reading
+
+
+def rewind(f):
+    print(f.seek(0))  # ------>opens the file to choose specific line
+
+
+# ------>choose the first three lines and print them
+def print_a_line(line_count, f):
+    print(line_count, f.readline())
+
+
+print("First let's print the whole file:\n")
+
+current_file = open("dummy.txt")
+print_all(current_file)
+
+print("Now let's rewind, kind of like a tape.")
+print("let's print three lines:")
+
+rewind(current_file)  # ------>call the rewind function
+line_count = 1
+
+
+# ---->This section print the first three lines with calling print_a_line function
+print_a_line(line_count, current_file)
+line_count = line_count + 1
+print_a_line(line_count, current_file)
+line_count = line_count + 1
+print_a_line(line_count, current_file)

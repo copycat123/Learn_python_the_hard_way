@@ -330,39 +330,78 @@ print 'I "said" do not touch this.'
 
 # FUNCTIONS AND  FILES
 
-from sys import argv
+# from sys import argv
 
-script, dummy = argv
-
-
-def print_all(f):
-    print(f.read())  # ------> opens the file to as reading
+# script, dummy = argv
 
 
-def rewind(f):
-    print(f.seek(0))  # ------>opens the file to choose specific line
+# def print_all(f):
+#     print(f.read())  # ------> opens the file to as reading
 
 
-# ------>choose the first three lines and print them
-def print_a_line(line_count, f):
-    print(line_count, f.readline())
+# def rewind(f):
+#     print(f.seek(0))  # ------>opens the file to choose specific line
 
 
-print("First let's print the whole file:\n")
-
-current_file = open("dummy.txt")
-print_all(current_file)
-
-print("Now let's rewind, kind of like a tape.")
-print("let's print three lines:")
-
-rewind(current_file)  # ------>call the rewind function
-line_count = 1
+# # ------>choose the first three lines and print them
+# def print_a_line(line_count, f):
+#     print(line_count, f.readline())
 
 
-# ---->This section print the first three lines with calling print_a_line function
-print_a_line(line_count, current_file)
-line_count = line_count + 1
-print_a_line(line_count, current_file)
-line_count = line_count + 1
-print_a_line(line_count, current_file)
+# print("First let's print the whole file:\n")
+
+# current_file = open("dummy.txt")
+# print_all(current_file)
+
+# print("Now let's rewind, kind of like a tape.")
+# print("let's print three lines:")
+
+# rewind(current_file)  # ------>call the rewind function
+# line_count = 1
+
+
+# # ---->This section print the first three lines with calling print_a_line function
+# print_a_line(line_count, current_file)
+# line_count = line_count + 1
+# print_a_line(line_count, current_file)
+# line_count = line_count + 1
+# print_a_line(line_count, current_file)
+
+
+# FUNCTIONS CAN RETURN SOMETHING
+
+def add(a, b):
+    print("ADDING %d + %d" % (a, b))
+    return a + b
+
+
+def subtract(a, b):
+    print("SUBTRACTING %d - %d" % (a, b))
+    return a - b
+
+
+def multiply(a, b):
+    print("MULTIPLYING %d * %d" % (a, b))
+    return a * b
+
+
+def divide(a, b):
+    print("DIVIDE %d / %d" % (a, b))
+    return a / b
+
+
+print("Let's do some math with just functions")
+
+age = add(14, 13)
+my_height = subtract(74, 24)
+my_weight = multiply(60, 2)
+iq = divide(100, 2)
+
+print("Age: %d, height: %d, weight: %d, iq: %d" %
+      (age, my_height, my_weight, iq))
+
+print("Here is a puzzule.")
+
+what = add(age, subtract(my_height, multiply(my_weight, divide(iq, 2))))
+
+print("That becomes:", what, "Can you do it by hand?")

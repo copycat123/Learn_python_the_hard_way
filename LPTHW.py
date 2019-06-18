@@ -405,3 +405,66 @@ print 'I "said" do not touch this.'
 # what = add(age, subtract(my_height, multiply(my_weight, divide(iq, 2))))
 
 # print("That becomes:", what, "Can you do it by hand?")
+
+'''CONDITIONAL STATEMENTS'''
+
+# --------------WHAT IF ----> (PAGE-100)
+
+# people = 20
+# cats = 30
+# dogs = 15
+
+# if people < cats:
+#     print("Too many cats! HELP!!!!!") ----->People are less then cats, so this statement is going to be print
+
+# if people > cats:
+#     print("Not too many cats! the world is saved") ----->People are not greater then cats, so this statement is not going to be print
+
+# if people < dogs:
+#     print("The word is going to be drooled")----->People are not less than dogs so this statement is not going to be printed
+
+# if people > dogs:
+#     print("The world is controlled")------>People have greater quantity than dogs so this statement is going to be printed
+
+# dogs += 5 ----> This statement going to add value in dogs, so dogs = 20;
+
+# if people >= dogs:
+#     print("People are greater than or equal to dogs")----->People are not greater than but equal to dogs value, so this statement is going to be
+                                                             # and also the following statements are going to be printed
+                                                             # because people value is equal to dogs.      
+# if people <= dogs:
+#     print("People are less than or equal to dogs")
+
+# if people == dogs:
+#     print("People are dogs")
+
+
+# -----------ELSE-IF-----------
+
+# people = 30
+# cars = 40
+# buses = 15
+
+# if cars > people:
+#     print("We should take the cars")
+
+# elif cars < people:
+#     print("we should not take cars")
+
+# else:
+#     print("We cannot decide")
+
+# if buses > cars:
+#     print("That's too many buses")
+
+# elif buses < cars:
+#     print("Maybe we could take buses")
+
+# else:
+#     print("It's dificult to decide")
+
+# if people > buses:
+#     print("Alright, let's just take the buses.")
+
+# else:
+#     print("Fine, let's stay home then")

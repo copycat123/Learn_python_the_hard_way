@@ -370,38 +370,38 @@ print 'I "said" do not touch this.'
 
 # FUNCTIONS CAN RETURN SOMETHING
 
-def add(a, b):
-    print("ADDING %d + %d" % (a, b))
-    return a + b
+# def add(a, b):
+#     print("ADDING %d + %d" % (a, b))
+#     return a + b  -------> return the final output
 
 
-def subtract(a, b):
-    print("SUBTRACTING %d - %d" % (a, b))
-    return a - b
+# def subtract(a, b):
+#     print("SUBTRACTING %d - %d" % (a, b))
+#     return a - b
 
 
-def multiply(a, b):
-    print("MULTIPLYING %d * %d" % (a, b))
-    return a * b
+# def multiply(a, b):
+#     print("MULTIPLYING %d * %d" % (a, b))
+#     return a * b
 
 
-def divide(a, b):
-    print("DIVIDE %d / %d" % (a, b))
-    return a / b
+# def divide(a, b):
+#     print("DIVIDE %d / %d" % (a, b))
+#     return a / b
 
 
-print("Let's do some math with just functions")
+# print("Let's do some math with just functions")
 
-age = add(14, 13)
-my_height = subtract(74, 24)
-my_weight = multiply(60, 2)
-iq = divide(100, 2)
+# age = add(14, 13)
+# my_height = subtract(74, 24)
+# my_weight = multiply(60, 2)
+# iq = divide(100, 2)
 
-print("Age: %d, height: %d, weight: %d, iq: %d" %
-      (age, my_height, my_weight, iq))
+# print("Age: %d, height: %d, weight: %d, iq: %d" %
+#       (age, my_height, my_weight, iq))
 
-print("Here is a puzzule.")
+# print("Here is a puzule.")
 
-what = add(age, subtract(my_height, multiply(my_weight, divide(iq, 2))))
+# what = add(age, subtract(my_height, multiply(my_weight, divide(iq, 2))))
 
-print("That becomes:", what, "Can you do it by hand?")
+# print("That becomes:", what, "Can you do it by hand?")
